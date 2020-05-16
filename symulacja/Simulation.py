@@ -1,6 +1,6 @@
 import numpy as np
 
-from commands.moves import  move_j
+from symulacja.commands.moves import  move_j
 
 def position(number, steps):
 
