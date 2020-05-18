@@ -29,11 +29,11 @@ else:
 def statemachine():
     # create paths from transitions (exemplary)
     path_1 = ["m_0_1", "m_1_2", "m_2_3", "m_3_4", "m_4_5", "m_5_0"]
-    path_2 = ["m_0_1", "m_1_2", "m_2_3", "m_3_4", "m_4_6", "m_6_5", "m_5_0"]
-    path_3 = ["m_0_1", "m_1_2", "m_2_3", "m_3_6", "m_6_5", "m_5_0"]
-    path_4 = ["m_0_1", "m_1_2", "m_2_6", "m_6_5", "m_5_0"]
-    path_5 = ["m_0_1", "m_1_6", "m_6_5", "m_5_0"]
-    paths = [path_1, path_2, path_3, path_4, path_5]
+#     path_2 = ["m_0_1", "m_1_2", "m_2_3", "m_3_4", "m_4_6", "m_6_5", "m_5_0"]
+#     path_3 = ["m_0_1", "m_1_2", "m_2_3", "m_3_6", "m_6_5", "m_5_0"]
+#     path_4 = ["m_0_1", "m_1_2", "m_2_6", "m_6_5", "m_5_0"]
+#     path_5 = ["m_0_1", "m_1_6", "m_6_5", "m_5_0"]
+    paths = [path_1]
 
     packing_path = ["p_0_1", "p_1_2", "p_2_3", "p_3_6", "p_6_6", "p_6_7", "p_7_1", "p_1_2", "p_2_3", "p_3_4", "p_4_5",
                     "p_5_0"]
@@ -144,7 +144,6 @@ def statemachine():
 
             if supervisor.current_state.value == "stop":
                 print("Supervisor done!")
-                exit()
             if supervisor.current_state.value == "error":
                 print("Error!")
 
