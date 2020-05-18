@@ -144,6 +144,7 @@ def statemachine():
 
             if supervisor.current_state.value == "stop":
                 print("Supervisor done!")
+                exit()
             if supervisor.current_state.value == "error":
                 print("Error!")
 
